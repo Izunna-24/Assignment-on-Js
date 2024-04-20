@@ -29,4 +29,4 @@ class AirCondition {
     }
 }
 
-//module.exports = (AirCondition)
+module.exports = (AirCondition)
