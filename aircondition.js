@@ -28,3 +28,5 @@ class AirCondition {
         }
     }
 }
+
+//module.exports = (AirCondition)
