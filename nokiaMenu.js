@@ -1,87 +1,164 @@
 function phoneMenu(){
-    console.log("1. Phone Book");
-    console.log("2. Messages");
-    console.log("3. Chat");
-    console.log("4. Call register");
-    console.log("5. Tones");
-    console.log("6. Settings")
-    console.log("7. Call divert")
-    console.log("8. Games")
-    console.log("9. Calculator")
-    console.log("10. Reminders")
-    console.log("11. Clock")
-    console.log("12. Profiles")
-    console.log("13. SIM services");
+    return `1. Phone Book
+            2. Messages
+            3. Chat
+            4. Call register
+            5. Tones
+            6. Settings
+            7. Call divert
+            8. Games
+            9. Calculator
+            10. Reminders
+            11. Clock
+            12. Profiles
+            13. SIM services`
 }
 
 function showPhoneBook(){
-    console.log("1.Search");
-    console.log("2. Service Nos");
-    console.log("3. Add name");
-    console.log("4. Erase");
-    console.log("5. Edit");
-    console.log("6. Assign tone");
-    console.log("7. Send b'card");
-    console.log("8. Options");
-    console.log('9. Speed dials');
-    console.log('10. Voice tags');
+    retunr `1.Search
+            2. Service Nos
+            3. Add name
+            4. Erase
+            5. Edit
+            6. Assign tone
+            7. Send b'card
+            8. Options
+            9. Speed dials
+            10. Voice tags`
 }
 
 function showOptions(){
-    console.log("1. Type of view");
-    console.log("2. Memory status")
+    return `1. Type of view
+            2. Memory status`
 }
 
 function showMessages(){
-    console.log("1. Write messages");
-    console.log("2. Inbox")
-    console.log("3. Outbox")
-    console.log("4. Picture messages")
-    console.log("5. Templates")
-    console.log("6. Smileys")
-    console.log("7. Message settings")
-    console.log('8. Info service')
-    console.log("9. Voice mailbox number")
-    console.log("10. Service command editor")
+    return `1. Write messages
+            2. Inbox
+            3. Outbox
+            4. Picture messages
+            5. Templates
+            6. Smileys
+            7. Message settings
+            8. Info service
+            9. Voice mailbox number
+            10. Service command editor`
 }
 
 function messageSettings(){
-console.log("1.Set")
-console.log("2. Common")
+return `    1.Set
+            2. Common
+`
 }
 
 function set1(){
-    console.log("1. Message centre number")
-    console.log("2. Message sent as")
-    console.log("3. Message validity");
+    return `1. Message centre number
+            2. Message sent as
+            3. Message validity`
 }
 
 function common(){
-    console.log("1. Delivery reports")
-    console.log("2. Reply via same centre")
-    console.log("Character support")
+    retunr` 1. Delivery reports
+            2. Reply via same centre
+            3. Character support
+    `
 }
 
 function showChat(){
-    console.log(");")
+    return`);` 
+     
 }
 
 function showCallReg(){
-    console.log("1. Missed call")
-    console.log("2. Received calls")
-    console.log("3. Dialled numbers")
-    console.log("4. Erase recent call lists")
-    console.log("5. Show call duration")
-    console.log("6. Show call cost")
-    console.log("7. Call cost settings")
-    console.log("Prepaid credit")
+    return `1. Missed call
+            2. Received calls
+            3. Dialled numbers
+            4. Erase recent call lists
+            5. Show call duration
+            6. Show call cost
+            7. Call cost settings
+            8. Prepaid credit`
 }
 
 function displayCallDurationList(){
-    console.log("1. Last call duration")
-    console.log("2. All calls' duration")
-    console.log("3. Recieved calls' duration")
-    console.log("4. Dialled calls's duration")
-    console.log("5. Clear timers")
+    retunr `1. Last call duration
+            2. All calls' duration
+            3. Recieved calls' duration
+            4. Dialled calls's duration
+            5. Clear timers
+`
 }
 
+function showCallCost(){
+    return`1. Last call cost
+    2. All calls' cost
+    3. Clear counters
+    `
+}
+
+function showCallCostSetting(){
+    return `1. Call cost limit
+            2. Show cost in
+    `
+}
+
+function showTonesList(){
+   return `1. Ringing Tone
+           2. Ringine Volume 
+           3. Incoming call alert
+           4. Composer
+           5. Message alert tone
+           6. Keypad tones
+           7. Warning and game tones
+           8. Vibrating alert
+           9. Screen saver 
+           `
+}
+
+function showSettingsList(){
+    return `1. Call settings
+            2. Phone settings
+            3. Security settings
+            4. Restore factory setting
+            
+    `
+}
+
+function showCallSettingList(){
+    return `1. Automatic redial
+            2. Speed dialing
+            3. Call waiting
+            4. Own number sending
+            5. Phone line in use
+            6. Automatic answer`
+}
+
+function showPhoneSettingList(){
+    return `1. Language
+            2. Cell info display
+            3. Welcome note
+            4. Network selection
+            5. Lights
+            6. Confirm SIM service actions`
+}
+
+function showSecuritySettingList(){
+    return `1. PIN code request
+            2. Call barring service
+            3. Fixed dialing
+            4. Closed user group
+            5. Phone security
+            6. Change access codes`
+}
+
+function showClockList(){
+    return `1. Alarm clock 
+            2. Clock settings
+            3. Date setting
+            4. Stopwatch
+            5. Countdown timer
+            6. Auto update of date and time`
+}
+
+// let userInput = prompt("Enter your name:");
+// console.log("Hello, " + userInput + "!");
