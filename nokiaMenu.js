@@ -44,3 +44,44 @@ function showMessages(){
     console.log("9. Voice mailbox number")
     console.log("10. Service command editor")
 }
+
+function messageSettings(){
+console.log("1.Set")
+console.log("2. Common")
+}
+
+function set1(){
+    console.log("1. Message centre number")
+    console.log("2. Message sent as")
+    console.log("3. Message validity");
+}
+
+function common(){
+    console.log("1. Delivery reports")
+    console.log("2. Reply via same centre")
+    console.log("Character support")
+}
+
+function showChat(){
+    console.log(");")
+}
+
+function showCallReg(){
+    console.log("1. Missed call")
+    console.log("2. Received calls")
+    console.log("3. Dialled numbers")
+    console.log("4. Erase recent call lists")
+    console.log("5. Show call duration")
+    console.log("6. Show call cost")
+    console.log("7. Call cost settings")
+    console.log("Prepaid credit")
+}
+
+function displayCallDurationList(){
+    console.log("1. Last call duration")
+    console.log("2. All calls' duration")
+    console.log("3. Recieved calls' duration")
+    console.log("4. Dialled calls's duration")
+    console.log("5. Clear timers")
+}
+
