@@ -1,5 +1,8 @@
+let prompt =  require('prompt-sync')()
+
 function phoneMenu(){
-    return `1. Phone Book
+    return `
+            1. Phone Book
             2. Messages
             3. Chat
             4. Call register
@@ -13,9 +16,14 @@ function phoneMenu(){
             12. Profiles
             13. SIM services`
 }
+function simServices(){
+    return `
+        sim services...`
+}
 
 function showPhoneBook(){
-    retunr `1.Search
+    return `
+            1.Search
             2. Service Nos
             3. Add name
             4. Erase
@@ -58,7 +66,7 @@ function set1(){
 }
 
 function common(){
-    retunr` 1. Delivery reports
+    return` 1. Delivery reports
             2. Reply via same centre
             3. Character support
     `
@@ -81,7 +89,7 @@ function showCallReg(){
 }
 
 function displayCallDurationList(){
-    retunr `1. Last call duration
+    return `1. Last call duration
             2. All calls' duration
             3. Recieved calls' duration
             4. Dialled calls's duration
@@ -151,6 +159,35 @@ function showSecuritySettingList(){
             6. Change access codes`
 }
 
+function showCallDivert(){
+    return `
+         Diverting call ...
+         `
+}
+
+function showGames(){
+    return `
+         snake...
+         `
+}
+function showCalculator(){
+    return `
+          Calculating...
+          `
+}
+
+function showReminders(){
+    return `
+        Setting reminder ...
+        `
+}
+function showProfiles(){
+    return `
+        1. Private
+        2. Public
+        3. Defualt
+        `
+}
 function showClockList(){
     return `1. Alarm clock 
             2. Clock settings
@@ -160,5 +197,66 @@ function showClockList(){
             6. Auto update of date and time`
 }
 
-// let userInput = prompt("Enter your name:");
-// console.log("Hello, " + userInput + "!");
+
+console.log(phoneMenu())
+let userChoice = prompt("Select: ")
+
+function input(userChoice) {
+    switch (userChoice) {
+        case '1':
+            console.log(showPhoneBook());
+            break;
+        case '2':
+            console.log(showMessages());
+            break;
+        case '3':
+            console.log(showChat());
+            break;
+        case '4':
+            console.log(showCallReg());
+            break;
+        case '4':
+            console.log(showCallReg());
+            break;
+        case '5':
+            console.log(showTonesList());
+            break;
+    
+        case '6':
+            console.log(showSettingsList());
+            break;
+        
+        case '7':
+            console.log(showCallDivert());
+            break;
+        
+        case '8':
+            console.log(showGames());
+            break;
+        
+        case '9':
+            console.log(showCalculator());
+            break;
+        
+        case '10':
+            console.log(showReminders());
+            break;
+        
+        case '11':
+            console.log(showClockList());
+            break;
+        
+        case '12':
+            console.log(showProfiles());
+            break;
+        
+        case '13':
+            console.log(simServices());
+            break;
+        default:
+            console.log("Invalid option")
+    }   
+
+}
+
+input(userChoice)
