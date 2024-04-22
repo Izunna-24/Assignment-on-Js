@@ -34,6 +34,11 @@ function showPhoneBook(){
             9. Speed dials
             10. Voice tags`
 }
+function search(){
+    return `
+            search
+            `
+}
 
 function showOptions(){
     return `1. Type of view
@@ -205,6 +210,15 @@ function input(userChoice) {
     switch (userChoice) {
         case '1':
             console.log(showPhoneBook());
+            let choice = prompt("Select: ")
+            function inputTwo(choice) {
+                switch (choice) {
+                    case '1':
+                        console.log(search());
+                        break;
+
+                }}
+
             break;
         case '2':
             console.log(showMessages());
