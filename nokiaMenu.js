@@ -41,7 +41,8 @@ function search(){
 }
 
 function showOptions(){
-    return `1. Type of view
+    return `
+            1. Type of view
             2. Memory status`
 }
 
@@ -201,7 +202,27 @@ function showClockList(){
             5. Countdown timer
             6. Auto update of date and time`
 }
+function serviceNos(){
+    return `
+    Service numbers`
+}
+function addName(){
+    return " adding name..."
+}
+function erase(){
+    return "erasing..."
+}
+function edit(){
+    return "editing..."
+}
 
+function assignTone(){
+    return "assigning tone ..."
+}
+
+function sendCard(){
+    return " seding b card ..."
+}
 
 console.log(phoneMenu())
 let userChoice = prompt("Select: ")
@@ -216,8 +237,29 @@ function input(userChoice) {
                     case '1':
                         console.log(search());
                         break;
-
+                    case '2':
+                        console.log(serviceNos());
+                        break;
+                    case '3':
+                         console.log(addName());
+                         break;
+                    case '4':
+                         console.log(erase());
+                         break;
+                    case '5':
+                         console.log(edit());
+                         break;                                           
+                    case '6':
+                          console.log(assignTone());
+                            break;
+                    case '7':
+                          console.log(sendCard());
+                            break;
+                    case '8':
+                          console.log(showOptions());
+                          break;
                 }}
+                inputTwo(choice)
 
             break;
         case '2':
